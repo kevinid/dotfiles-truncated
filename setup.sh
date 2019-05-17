@@ -79,21 +79,8 @@ backup () {
 }
 backup ~/.config/nvim/init.vim
 ln -s $PWD/init.vim ~/.config/nvim/init.vim
-if ! [ -d ~/.ssh ]
-    then
-        mkdir ~/.ssh
-fi
-backup ~/.ssh/config
-ln -s $PWD/ssh-config ~/.ssh/config
-backup ~/.gitconfig
-ln -s $PWD/.gitconfig ~/.gitconfig
 backup ~/.zshrc
 ln -s $PWD/.zshrc ~/.zshrc
-backup ~/.tmux.conf
-ln -s $PWD/.tmux.conf ~/.tmux.conf
-ln -s $PWD/.tmux-theme.conf ~/.tmux-theme.conf
-chmod +x $PWD/tmux-env.sh
-ln -s $PWD/tmux-env.sh ~/tmux-env.sh
 
 # Install zsh theme 'pure'
 npm install --global pure-prompt --allow-root --unsafe-perm=true
