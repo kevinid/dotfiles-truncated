@@ -26,7 +26,7 @@
         " call dein#add('Konfekt/FastFold') " Folding
         call dein#add('pseewald/vim-anyfold')
         call dein#add('rking/ag.vim')
-        call dein#add('Yggdroot/indentLine') " Displaying indent line
+        " call dein#add('Yggdroot/indentLine') " Displaying indent line
         call dein#add('mileszs/ack.vim') " For global search
         call dein#add('terryma/vim-multiple-cursors')
 
