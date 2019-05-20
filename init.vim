@@ -32,7 +32,7 @@
 
         " Themes
         call dein#add('vim-airline/vim-airline')
-        call dein#add('NLKNguyen/papercolor-theme')
+        call dein#add('tomasiser/vim-code-dark')
         call dein#add('vim-airline/vim-airline-themes')
 
         " For code completion
@@ -185,7 +185,7 @@
     " Theme
     set termguicolors
     set background=light
-    colorscheme PaperColor
+    colorscheme codedark
 " }}}
 
 " Plugins {{{
@@ -194,7 +194,7 @@
 
     " airline
     let g:airline_powerline_fonts = 1
-    let g:airline_theme = "papercolor"
+    let g:airline_theme = "codedark"
 
     " deoplete
     if !empty(glob('/usr/bin/python2.7'))
