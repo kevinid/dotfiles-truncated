@@ -65,7 +65,7 @@ git clone https://github.com/zsh-users/zsh-autosuggestions.git \
 cd $W_DIR
 
 # Install NeoBundle
-curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh\
+curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh \
     > installer.sh
 sh ./installer.sh ~/.cache/dein
 
@@ -81,6 +81,9 @@ backup ~/.config/nvim/init.vim
 ln -s $PWD/init.vim ~/.config/nvim/init.vim
 backup ~/.zshrc
 ln -s $PWD/.zshrc ~/.zshrc
+backup ~/.tmux.conf
+ln -s $PWD/.tmux.conf ~/.tmux.conf
+ln -s $PWD/.tmux-theme.conf ~/.tmux-theme.conf
 
 # Install zsh theme 'pure'
 npm install --global pure-prompt --allow-root --unsafe-perm=true
